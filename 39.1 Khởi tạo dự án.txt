@@ -1,0 +1,7 @@
+Tài nguyên trong bài học:
+
+- Thiết kế trên Figma: https://short.f8team.dev/du-an-3
+- Repository của dự án trên Github: https://github.com/sondnpt00343/htmlcss-project-03
+- Dự án đã deploy với Github page: https://sondnpt00343.github.io/htmlcss-project-03/
+
+
