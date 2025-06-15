@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* Font size mặc định là 16px -> 16 * 62.5% =  10px -> chuyển qua rem cho dễdễ */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
