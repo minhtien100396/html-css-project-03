@@ -1,3 +1,4 @@
+/* Set các thuộc tính nằm trong hộp đã cố định như padding, margin */
 * {
     box-sizing: border-box;
 }
@@ -19,7 +20,9 @@ body {
 /* Common */
 .container {
     width: 1170px;
+    /* Trường hợp zoom lên thì vẫn cách 2 bên trái phải 24px */
     max-width: calc(100% - 48px);
+    /* Căn giữa */
     margin: 0 auto;
 }
 
@@ -53,6 +56,7 @@ a {
     min-height: 100vh;
     background: var(--header-bg);
     padding-top: 30px;
+    padding-bottom: 110px;
 }
 
 .logo {
@@ -112,11 +116,7 @@ a {
     display: flex;
 }
 
-.header-action {
-    display: flex;
-    align-items: center;
-}
-.header-action_login,
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     color: #c9d2da;
@@ -142,11 +142,85 @@ a {
     background: #fff;
 }
 
-.header-action_signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
 }
 
-.header-action_login {
-    margin-right: 7px;
+/* Hero */
+.hero {
+    display: flex;
+    margin-top: 76px;
+    align-items: center;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -0.14rem;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    color: #ffffff;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
 }
